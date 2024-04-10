@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-box">
+        <form action="">
+            <div class="container">
+                <h2>Tax Calculator</h2>
+
+                <div class="input-box">               
+                   <h3>Enter gross annual income</h3>
+                    <img  src="./question-mark-circle.svg" alt="quesion mark">
+                    <span class="text"> Gross annual income is your total salary is a year before any deductions</span>
+                </div>    
+                <input type="number" id="annual" placeholder="Enter gross annual income" required>
+        
+               
+                <div class="input-box">               
+                     <h3>Enter extra  income</h3>
+                     <img   src="./question-mark-circle.svg" alt="quesion mark">
+                     <span class="text">Total extra income</span>
+                 </div> 
+                <input type="number" id="extra" placeholder="Enter extra  income" required>
+        
+    
+                <div class="input-box">               
+                     <h3>Enter age group</h3>
+                     <img   src="./question-mark-circle.svg" alt="quesion mark">
+                     <span class="text">Total extra income</span>
+                 </div> 
+                <input type="number" id="age" placeholder="Enter the age" required>
+        
+    
+                <div class="input-box">               
+                    <h3>Total applicable deduction</h3>
+                    <img   src="./question-mark-circle.svg" alt="quesion mark">
+                    <span class="text">Total deduction income in a year</span>
+                </div> 
+                <input type="number" id="deduction" placeholder="Add total applicable deductions" required>
+        
+                <button type="submit" >Submit</button>
+            </div>
+        </form>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

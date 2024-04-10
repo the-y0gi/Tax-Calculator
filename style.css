@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carter+One&family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Poppins" , sans-serif;
+}
+
+.container-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 500px;
+    padding: 0 30px;   
+   border: 2px solid rgba(0, 0, 0, 0.208);
+}
+
+h2{
+    text-align: center;
+    margin:20px ;
+}
+.container>input,h3,button{
+    padding: 15px 30px;
+  
+}
+
+.input-box{
+    display: flex;  
+}
+
+img:hover{
+    cursor: pointer;
+}
+.input-box .text {
+    display: none;
+    position: absolute;
+    background-color: #090909ae;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    z-index: 1;
+}
+.text{
+    width: 150px;
+    right: 580px;
+    
+}
+.input-box img:hover + .text {
+    display: block;
+}
+
+input,button{
+    border: none;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.208);
+    width: 70%;
+    border-radius: 5px;
+   margin-left: 27px;
+   
+}
+input{
+    font-size: 1rem;   
+}
+h3{
+    font-weight: 500;
+   
+    
+}
+button{
+    margin: 50px 10px ;
+    margin-left: 25px;
+    width: 83%;
+    color: white;
+    background-color: rgba(43, 43, 199, 0.799);
+    font-weight: bold;
+    font-size: 1rem;
+}
+button:hover{
+    background-color: rgba(0, 0, 255, 0.806);
+    cursor: pointer;
+}
+
+.overall-income{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.208);
+    border-radius: 5px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    color: white;
+    background-color: rgb(55, 79, 56);
+}
+
+.container.blur-background {
+    filter: blur(4px);
+}
+
+.delete-btn{
+    background-color: rgb(255, 248, 248);
+    width: 60%;
+    margin-bottom: 20px;
+    color: black;
+}
+.delete-btn:hover{
+    background-color: rgba(141, 132, 132, 0.594);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    
+    .container {
+      width: 90%;
+      padding: 0 15px;
+      margin:  0 auto;
+    }
+    
+    .container > input, h3, button {
+      padding: 10px 20px;
+    }
+  
+    .text {
+      width: auto;
+      right: auto;
+    }
+  
+    input, button {
+      width: 70%;
+    }
+  button{
+    width: 82%;
+  }
+    .container-box {
+      align-items: center;
+    }
+
+      
+  .overall-income{
+    width: 90%;
+    height: 300px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.208);
+    border-radius: 5px;
+}
+.input-box .text {
+    width: 80px;
+    left: 72%;
+}
+
+  } 
+
+
+
+
